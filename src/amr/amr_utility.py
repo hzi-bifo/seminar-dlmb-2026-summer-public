@@ -23,16 +23,16 @@ import pandas as pd
 from tqdm import tqdm
 
 data_files = {
-#    "Klebsiella_pneumoniae_aztreonam":{
-#        "pathogen": "Klebsiella_pneumoniae",
-#        "antibiotics": "aztreonam",
-#        "gene": "*",
-#        "fold": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/folds_Klebsiella_pneumoniae_aztreonam.json",
-#        "labels": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/labels_Klebsiella_pneumoniae_aztreonam.tsv",
-#        "seq_raw": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/dlmb_data_Klebsiella_pneumoniae_aztreonam_raw.tar.gz",
-#        "seq_gene": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/dlmb_data_Klebsiella_pneumoniae_aztreonam_gene.tar.gz",
-#        "seq_format": "{}.fna"
-#    }, 
+    "Staphylococcus_aureus_cefoxitin":{
+        "pathogen": "Staphylococcus_aureus",
+        "antibiotics": "cefoxitin",
+        "gene": "*",
+        "fold": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2025W/folds_Staphylococcus_aureus_cefoxitin.json",
+        "labels": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2025W/labels_Staphylococcus_aureus_cefoxitin.tsv",
+        "seq_raw": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2025W/dlmb_data_Staphylococcus_aureus_cefoxitin_raw.tar.gz",
+        "seq_gene": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2025W/dlmb_data_Staphylococcus_aureus_cefoxitin_gene.tar.gz",
+        "seq_format": "{}.fna"
+    },
     "Klebsiella_pneumoniae_aztreonam":{
         "pathogen": "Klebsiella_pneumoniae",
         "antibiotics": "aztreonam",
