@@ -23,35 +23,35 @@ import pandas as pd
 from tqdm import tqdm
 
 data_files = {
+#    "Klebsiella_pneumoniae_aztreonam":{
+#        "pathogen": "Klebsiella_pneumoniae",
+#        "antibiotics": "aztreonam",
+#        "gene": "*",
+#        "fold": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/folds_Klebsiella_pneumoniae_aztreonam.json",
+#        "labels": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/labels_Klebsiella_pneumoniae_aztreonam.tsv",
+#        "seq_raw": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/dlmb_data_Klebsiella_pneumoniae_aztreonam_raw.tar.gz",
+#        "seq_gene": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/dlmb_data_Klebsiella_pneumoniae_aztreonam_gene.tar.gz",
+#        "seq_format": "{}.fna"
+#    }, 
     "Klebsiella_pneumoniae_aztreonam":{
         "pathogen": "Klebsiella_pneumoniae",
         "antibiotics": "aztreonam",
         "gene": "*",
-        "fold": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/folds_Klebsiella_pneumoniae_aztreonam.json",
-        "labels": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/labels_Klebsiella_pneumoniae_aztreonam.tsv",
-        "seq_raw": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/dlmb_data_Klebsiella_pneumoniae_aztreonam_raw.tar.gz",
-        "seq_gene": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/dlmb_data_Klebsiella_pneumoniae_aztreonam_gene.tar.gz",
-        "seq_format": "{}.fna"
-    }, 
-    "Staphylococcus_aureus_cefoxitin":{
-        "pathogen": "Staphylococcus_aureus",
-        "antibiotics": "cefoxitin",
-        "gene": "*",
-        "fold": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/folds_Staphylococcus_aureus_cefoxitin.json",
-        "labels": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/labels_Staphylococcus_aureus_cefoxitin.tsv",
-        "seq_raw": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/dlmb_data_Staphylococcus_aureus_cefoxitin_raw.tar.gz",
-        "seq_gene": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/dlmb_data_Staphylococcus_aureus_cefoxitin_gene.tar.gz",
+        "fold": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2026S/folds_Klebsiella_pneumoniae_aztreonam.json",
+        "labels": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2026S/labels_Klebsiella_pneumoniae_aztreonam.tsv",
+        "seq_raw": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2026S/dlmb_data_Klebsiella_pneumoniae_aztreonam_raw.tar.gz",
+        "seq_gene": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2026S/dlmb_data_Klebsiella_pneumoniae_aztreonam_gene.tar.gz",
         "seq_format": "{}.fna"
     },
-    "Staphylococcus_aureus_cefoxitin_pbp4":{
-        "pathogen": "Staphylococcus_aureus",
-        "antibiotics": "cefoxitin",
-        "gene": "pbp4",
-        "fold": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/folds_Staphylococcus_aureus_cefoxitin.json",
-        "labels": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/labels_Staphylococcus_aureus_cefoxitin.tsv",
-        "seq_raw": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/dlmb_data_Staphylococcus_aureus_cefoxitin_gene_pbp4.tar.gz",
-        "seq_gene": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/dlmb_data_Staphylococcus_aureus_cefoxitin_gene_pbp4.tar.gz",
-        "seq_format": "{}-pbp4.fna"
+    "Klebsiella_pneumoniae_aztreonam_gene_bla_1":{
+        "pathogen": "Klebsiella_pneumoniae",
+        "antibiotics": "aztreonam",
+        "gene": "bla_1",
+        "fold": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2026S/folds_Klebsiella_pneumoniae_aztreonam.json",
+        "labels": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2026S/labels_Klebsiella_pneumoniae_aztreonam.tsv",
+        "seq_raw": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2026S/dlmb_data_Klebsiella_pneumoniae_aztreonam_gene_bla_1.tar.gz",
+        "seq_gene": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2026S/dlmb_data_Klebsiella_pneumoniae_aztreonam_gene_bla_1.tar.gz",
+        "seq_format": "{}-bla_1.fna"
     }
 }
 
