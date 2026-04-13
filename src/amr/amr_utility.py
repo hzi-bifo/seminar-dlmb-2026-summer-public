@@ -61,7 +61,7 @@ data_files = {
         "labels": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2026S/labels_Klebsiella_pneumoniae_aztreonam.tsv",
         "seq_raw": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2026S/dlmb_data_Klebsiella_pneumoniae_aztreonam_gene_bla.tar.gz",
         "seq_gene": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2026S/dlmb_data_Klebsiella_pneumoniae_aztreonam_gene_bla.tar.gz",
-        "seq_format": "{}-bla.fna"
+        "seq_format": "{}.fna"
     }
 }
 
