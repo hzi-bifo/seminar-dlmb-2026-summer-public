@@ -52,6 +52,16 @@ data_files = {
         "seq_raw": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2026S/dlmb_data_Klebsiella_pneumoniae_aztreonam_gene_bla_1.tar.gz",
         "seq_gene": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2026S/dlmb_data_Klebsiella_pneumoniae_aztreonam_gene_bla_1.tar.gz",
         "seq_format": "{}-bla_1.fna"
+    },
+    "Klebsiella_pneumoniae_aztreonam_gene_bla":{
+        "pathogen": "Klebsiella_pneumoniae",
+        "antibiotics": "aztreonam",
+        "gene": "*",
+        "fold": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2026S/folds_Klebsiella_pneumoniae_aztreonam.json",
+        "labels": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2026S/labels_Klebsiella_pneumoniae_aztreonam.tsv",
+        "seq_raw": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2026S/dlmb_data_Klebsiella_pneumoniae_aztreonam_gene_bla.tar.gz",
+        "seq_gene": "https://syncandshare.desy.de/public.php/dav/files/XgXfASCFeF2jw4M/2026S/dlmb_data_Klebsiella_pneumoniae_aztreonam_gene_bla.tar.gz",
+        "seq_format": "{}-bla.fna"
     }
 }
 
@@ -259,10 +269,10 @@ def get_seq_label_hard(dataset_name, mode = "raw"):
 def get_seq_label_simple(dataset_name):
     # x = get_seq_label_fold(dataset_name, 0, 100)
     # print([(seqs, ll) for seqs, ll in x if len(seqs) != 1])
-    test = [(next(iter(s.values())), ll) for s, ll in get_seq_label_fold(dataset_name, 0, 100)]
+    test = [(next(iter(s.values())), ll) for s, ll in get_seq_label_fold(dataset_name, 0, 10000)]
     train = []
     for i in range(1, 9):
-        for seqs, label in get_seq_label_fold(dataset_name, i, 100):
+        for seqs, label in get_seq_label_fold(dataset_name, i, 10000):
             assert(len(seqs) == 1)
             train.append((next(iter(seqs.values())), label))
 
